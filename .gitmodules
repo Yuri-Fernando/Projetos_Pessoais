@@ -34,3 +34,6 @@
 [submodule "projetos_pequenos"]
 	path = projetos_pequenos
 	url = https://github.com/Dubbern/Projetos_Pequenos.git
+[submodule "conecta-ai"]
+	path = conecta-ai
+	url = https://github.com/Dubbern/conectaAI_deploy.git
