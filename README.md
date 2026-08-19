@@ -184,7 +184,7 @@ Projetos Pessoais
 | `JhonesAI_Ecosystem` | [Dubbern/JhonesAI_Ecosystem](https://github.com/Dubbern/JhonesAI_Ecosystem) | Próprio — público | Multi-Agent Cognitive Investment & Travel & Financial Intelligence |
 | `jhones-trader` | [Dubbern/jhones-trader](https://github.com/Dubbern/jhones-trader) | Próprio — privado | Sistema cognitivo de trading — 6 camadas, 30+ módulos Python |
 | `DDuas` | [Dubbern/DDuas](https://github.com/Dubbern/DDuas) | Próprio — público | Empresa em parceria de análise de dados e monitoramento para empresas |
-| `DDuas-Pipeline` | [Dubbern/DDuas-Pipeline](https://github.com/Dubbern/DDuas-Pipeline) | Próprio — privado | Pipeline de dados da DDuas |
+| `DDuas-Pipeline` | [Dubbern/DDuas-Pipeline](https://github.com/Dubbern/DDuas-Pipeline) | Próprio — privado | 🟢 Concluído — pipeline de credit scoring (feature engineering, treino Logistic/XGBoost, monitoramento IV/PSI/WOE em lote) entregue em consultoria de dados para a DDuas |
 | `BootcampSantander` | [Dubbern/BootcampSantander](https://github.com/Dubbern/BootcampSantander) | Próprio — público | Projetos do bootcamp Santander |
 | `ocr` | [Dubbern/OCR](https://github.com/Dubbern/OCR) | Próprio — público | Projeto de OCR |
 | `projetos_pequenos` | [Dubbern/Projetos_Pequenos](https://github.com/Dubbern/Projetos_Pequenos) | Próprio — público | Scripts e utilitários menores |
