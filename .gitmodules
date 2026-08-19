@@ -34,9 +34,15 @@
 [submodule "projetos_pequenos"]
 	path = projetos_pequenos
 	url = https://github.com/Dubbern/Projetos_Pequenos.git
-[submodule "conecta-ai"]
-	path = conecta-ai
+[submodule "conectaAI_deploy"]
+	path = conectaAI_deploy
 	url = https://github.com/Dubbern/conectaAI_deploy.git
 [submodule "jhones-trader"]
 	path = jhones-trader
 	url = https://github.com/Dubbern/jhones-trader.git
+[submodule "conecta-ai"]
+	path = conecta-ai
+	url = https://github.com/Dubbern/conecta-ai.git
+[submodule "DDuas-Pipeline"]
+	path = DDuas-Pipeline
+	url = https://github.com/Dubbern/DDuas-Pipeline.git

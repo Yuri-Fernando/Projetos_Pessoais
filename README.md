@@ -6,9 +6,11 @@ Este repositório funciona como um **hub central dos meus projetos pessoais**, r
 
 A organização é dividida em três grandes grupos:
 
-## 1. Forks, Estudos e Projetos Derivados — Públicos
+## 1. Projetos de Terceiros e Estudos — Públicos
 
-Reúne **forks de projetos da DIO, bootcamps, formações, comunidades e outros projetos externos**, utilizados para estudo, adaptação, experimentação e exploração técnica.
+Reúne **submodules apontando para projetos da DIO, bootcamps, formações, comunidades e outros projetos externos**, utilizados para estudo, adaptação, experimentação e exploração técnica.
+
+> **Nota técnica:** os itens desta categoria são referenciados via **Git Submodule apontando direto para o repositório original do autor**, fixado em um commit específico — não são forks no sentido do GitHub (não existe o badge "forked from" nem uma cópia própria do repositório). O histórico e a autoria originais ficam integralmente preservados. O mapa completo de cada submodule (pasta, repositório de origem e tipo) está na seção [Organização](#organização).
 
 Entre os conteúdos estão projetos relacionados a:
 
@@ -24,11 +26,11 @@ Entre os conteúdos estão projetos relacionados a:
 - Engenharia de Software;
 - Desenvolvimento de agentes.
 
-Também fazem parte dessa categoria **forks e adaptações de ferramentas e projetos externos**, utilizados como base para estudar arquiteturas, testar tecnologias, modificar funcionalidades e desenvolver integrações próprias.
+Também fazem parte dessa categoria **submodules e adaptações de ferramentas e projetos externos**, utilizados como base para estudar arquiteturas, testar tecnologias, modificar funcionalidades e desenvolver integrações próprias.
 
 ### Evolution API
 
-Um dos exemplos é a utilização da **Evolution API** como base para estudos e experimentações relacionados a WhatsApp e automação.
+Um dos exemplos é a referência à **Evolution API** (submodule apontando direto para `EvolutionAPI/evolution-api`) como base para estudos e experimentações relacionados a WhatsApp e automação.
 
 Os experimentos podem envolver:
 
@@ -43,9 +45,17 @@ Os experimentos podem envolver:
 - Memória contextual;
 - Workflows comerciais.
 
+### DIO — Lab Open Source
+
+Submodule apontando para `digitalinnovationone/dio-lab-open-source`, repositório do lab **"Contribuindo em um Projeto Open Source no GitHub"** da Digital Innovation One, usado como registro de estudo e prática de contribuição open source.
+
+### Case BI — Power BI Analyst
+
+Submodule apontando para `julianazanelatto/power_bi_analyst`, fixado em um commit específico como referência de estudo de caso em análise de dados com Power BI. Mantido intocado — o pin não é atualizado automaticamente com o upstream.
+
 Esses repositórios públicos têm principalmente caráter de **estudo, experimentação, extensão e integração**, mantendo a referência ao projeto original quando aplicável.
 
-> Projetos derivados de terceiros permanecem sujeitos às respectivas licenças e condições de uso. A presença de um fork neste hub não implica autoria integral do projeto original.
+> Projetos de terceiros permanecem sujeitos às respectivas licenças e condições de uso. A presença de um submodule neste hub não implica autoria do projeto original — cada um mantém a atribuição ao autor/organização de origem.
 
 ---
 
@@ -72,7 +82,10 @@ Entre as principais iniciativas estão projetos como:
 - **ConectaAI** — SaaS de agentes de IA e central de serviços de IA para empresas;
 - **JARVIS** — infraestrutura central de orquestração de IA e automação;
 - **JhonesAI Ecosystem** — pesquisa em inteligência financeira, travel-tech e sistemas multiagente;
+- **DDuas** — empresa em parceria de análise de dados e monitoramento para empresas, com o pipeline correspondente em **DDuas-Pipeline**;
 - Outros produtos, agentes e infraestruturas em desenvolvimento.
+
+> **Nota sobre a família ConectaAI:** por trás do nome existem três repositórios distintos, mantidos separados de propósito — `ConectaAI` (produto/SaaS público), `conectaAI_deploy` (repositório de deploy, privado) e `conecta-ai` (SaaS de agentes de IA para WhatsApp, privado). Os três estão referenciados como submodules independentes na seção [Organização](#organização).
 
 Esses projetos podem envolver:
 
@@ -114,7 +127,7 @@ Esses projetos representam principalmente **experimentação rápida e desenvolv
 A ideia deste repositório é funcionar como um **índice central dos diferentes projetos que compõem minha trajetória técnica**, mantendo separados os projetos externos, os projetos autorais e os experimentos menores.
 
 ```text
-Forks / Estudos
+Terceiros / Estudos
        ↓
 Experimentação
        ↓
@@ -133,29 +146,52 @@ Alguns projetos são independentes, enquanto outros fazem parte de iniciativas m
 
 ## Organização
 
-Os projetos são mantidos em repositórios independentes e podem ser conectados a este hub por meio de **Git Submodules**.
+Os projetos são mantidos em repositórios independentes e conectados a este hub por meio de **Git Submodules** — cada pasta abaixo é um repositório próprio, fixado em um commit específico.
 
 ```text
 Projetos Pessoais
 │
-├── Forks / Estudos
+├── Terceiros / Estudos (submodule direto pro upstream, sem fork no GitHub)
 │   ├── DIO
 │   ├── Evolution API
-│   ├── Outros projetos externos
-│   └── Experimentos
+│   ├── Case BI
+│   └── Outros projetos externos
 │
-├── Projetos Autorais
+├── Projetos Autorais (submodule pro meu próprio repositório)
 │   ├── AI
 │   ├── Data
 │   ├── Automation
 │   ├── SaaS
 │   └── Research
 │
-└── Projetos Pequenos
+└── Projetos Pequenos (submodule pro meu próprio repositório)
     ├── Scripts
     ├── Notebooks
     └── Utilities
 ```
+
+### Mapa de Submodules
+
+| Pasta | Repositório | Tipo | Descrição |
+|---|---|---|---|
+| `evolution-api` | [EvolutionAPI/evolution-api](https://github.com/EvolutionAPI/evolution-api) | Terceiro — submodule direto (não é fork) | Evolution API — API open-source de integração com WhatsApp |
+| `dio-lab-open-source` | [digitalinnovationone/dio-lab-open-source](https://github.com/digitalinnovationone/dio-lab-open-source) | Terceiro — submodule direto (não é fork) | Lab "Contribuindo em um Projeto Open Source no GitHub" da DIO |
+| `power_bi_analyst` | [julianazanelatto/power_bi_analyst](https://github.com/julianazanelatto/power_bi_analyst) | Terceiro — submodule direto, **pin fixo intocado** (`b010c18`) | Case de estudo em análise de dados com Power BI |
+| `ConectaAI` | [Dubbern/ConectaAI](https://github.com/Dubbern/ConectaAI) | Próprio — público | SaaS de agentes de IA |
+| `conectaAI_deploy` | [Dubbern/conectaAI_deploy](https://github.com/Dubbern/conectaAI_deploy) | Próprio — privado, **intocado** | Repositório de deploy do ConectaAI |
+| `conecta-ai` | [Dubbern/conecta-ai](https://github.com/Dubbern/conecta-ai) | Próprio — privado | SaaS de agentes de IA para WhatsApp |
+| `Jarvis` | [Dubbern/Jarvis](https://github.com/Dubbern/Jarvis) | Próprio — público | Infraestrutura central de orquestração de IA e automação |
+| `JhonesAI_Ecosystem` | [Dubbern/JhonesAI_Ecosystem](https://github.com/Dubbern/JhonesAI_Ecosystem) | Próprio — público | Multi-Agent Cognitive Investment & Travel & Financial Intelligence |
+| `jhones-trader` | [Dubbern/jhones-trader](https://github.com/Dubbern/jhones-trader) | Próprio — privado | Sistema cognitivo de trading — 6 camadas, 30+ módulos Python |
+| `DDuas` | [Dubbern/DDuas](https://github.com/Dubbern/DDuas) | Próprio — público | Empresa em parceria de análise de dados e monitoramento para empresas |
+| `DDuas-Pipeline` | [Dubbern/DDuas-Pipeline](https://github.com/Dubbern/DDuas-Pipeline) | Próprio — privado | Pipeline de dados da DDuas |
+| `BootcampSantander` | [Dubbern/BootcampSantander](https://github.com/Dubbern/BootcampSantander) | Próprio — público | Projetos do bootcamp Santander |
+| `ocr` | [Dubbern/OCR](https://github.com/Dubbern/OCR) | Próprio — público | Projeto de OCR |
+| `projetos_pequenos` | [Dubbern/Projetos_Pequenos](https://github.com/Dubbern/Projetos_Pequenos) | Próprio — público | Scripts e utilitários menores |
+| `saas-atendimento-frame` | [Dubbern/saas-atendimento-frame](https://github.com/Dubbern/saas-atendimento-frame) | Próprio — privado, **intocado** | Base do SaaS Conecta v1 |
+| `Case-Embarcados` | [Dubbern/Case-Embarcados](https://github.com/Dubbern/Case-Embarcados) | Próprio — privado, **intocado** | Primeiro case de teste em sistemas embarcados |
+
+> Itens marcados **intocado** têm o pin do submodule mantido deliberadamente parado — não são atualizados automaticamente junto com os demais.
 
 ---
 
@@ -217,7 +253,7 @@ Por isso, alguns projetos começam como pequenos experimentos, enquanto outros e
       Open Source           Projetos Autorais      Experimentos
           │                     │                     │
           ▼                     ▼                     ▼
-      Forks / DIO          SaaS / IA / Data       Scripts / Labs
+   Submodules / DIO        SaaS / IA / Data       Scripts / Labs
                                 │
                    ┌────────────┼────────────┐
                    ▼            ▼            ▼
@@ -248,9 +284,9 @@ Por isso, alguns projetos começam como pequenos experimentos, enquanto outros e
 
 ---
 
-## Observação sobre Forks
+## Observação sobre Projetos de Terceiros
 
-Os forks públicos são mantidos principalmente para:
+Os submodules de terceiros (DIO, Evolution API, Case BI) apontam diretamente para o repositório original do autor, fixados em um commit específico — não são forks no sentido do GitHub. São mantidos principalmente para:
 
 - Estudo;
 - Experimentação;
