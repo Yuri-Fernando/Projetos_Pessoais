@@ -46,6 +46,3 @@
 [submodule "DDuas-Pipeline"]
 	path = DDuas-Pipeline
 	url = https://github.com/Dubbern/DDuas-Pipeline.git
-[submodule "GrokBot"]
-	path = GrokBot
-	url = https://github.com/Yuri-Fernando/GrokBot.git
